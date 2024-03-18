@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body
+{
+    background-color: rgb(195, 207, 217);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header
+{
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 232, 237);
+    height: 60px;
+    width: 100%;
+}
+#header_botoes
+{
+    margin-left: 15px;
+    width: 30%;
+}
+#header_titulo
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 25%;
+    margin-right: auto;
+}
+header a
+{
+    background-color: #4B5C6B;
+    height: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formulario
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formulario_input
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formulario_input input
+{
+    margin-top: 10px;
+    padding: 10px;
+    width: 950%;
+    border-radius: 5px;
+    border-style: none;
+}
+#formulario_botoes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formulario_botoes input
+{
+    margin-top: 10px;
+    padding: 10px;
+    width: 2315%;
+    background-color: #4B5C6B;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+}
+
+#listagem
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#listagem_input input
+{
+    margin-top: 10px;
+    padding: 10px;
+    width: 950%;
+    border-radius: 5px;
+    border-style: none;
+}
+#listagem_botoes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#listagem_botoes input
+{
+    margin-top: 10px;
+    padding: 10px;
+    width: 1700%;
+    background-color: #4B5C6B;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+}

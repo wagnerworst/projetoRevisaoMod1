@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="./index.html">Cadastro</a></li>
-            <li><a href="./listagem.html">Listagem</a></li>
-        </ul>
-        <h1>CSS E JS</h1>
+        <div id="header_botoes">
+            <a href="./index.html">Cadastro</a>
+            <a href="./listagem.html">Listagem</a>
+        </div>
+        <div id="header_titulo">
+            <h1>CSS E JS</h1>
+        </div>    
     </header>
     <main>
         <section id="formulario">
@@ -20,7 +23,7 @@
                 <input type="text" name="" id="formulario__descricao" placeholder="Descrição">
             </div>
             <div id="formulario_botoes">
-                <input type="button" value="Cadastrar" id="formulario__cadastrar">
+                <input type="button" value="Cadastrar" id="formulario__cadastrar" >
             </div>
             <div id="formulario_resultado">
                 <p>...</p>
