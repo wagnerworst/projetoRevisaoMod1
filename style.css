@@ -133,3 +133,30 @@ main
     border-style: none;
     color: white;
 }
+#formulario_resultado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formularioResultado_sucesso
+{
+    background-color: #207868;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    width: 980%;
+    text-align: center;
+}
+#formularioResultado_erro
+{
+    background-color: #AC6363;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    width: 1099%;
+}
