@@ -49,15 +49,30 @@ function pegarValorElementoHtml(idElemento){
     return elemento.value;
 }
 
-async function exibirLivros(){
-    const url = "https://api-aula.up.railway.app/livros";
+async function exibirLivros(){ 
+    var response = await buscarLivrosApi()
+    const livros = await response.json();
 
-    const fetchOptionsGet = {
-        method: "GET"
-    }
+    await mostrarLivrosTela(livros);
+}
 
-    var livros = await fetch(url, fetchOptionsGet);
-    var response = livros.json();
+async function buscarLivrosApi(){
+    return fetch("https://api-aula.up.railway.app/livros");
+}
 
-    console.log(response);
+function mostrarLivrosTela(livrosJson){
+
+    const listagemLivros = document.getElementById("listagem_resultado");
+
+    let livrosConcatenados = "";
+    livrosJson.forEach(livros => {
+        livrosConcatenados += `
+            <div   class="livros">
+                <p>Título: ${livros.title}</p> 
+                <p>Descrição: ${livros.description}</p> 
+            </div>
+        `
+    });
+
+    listagemLivros.innerHTML = livrosConcatenados;
 }
